@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <title>Challenge ONE Encriptador de Texto</title>
 </head>
@@ -12,51 +14,48 @@
 <body>
     <header>
         <img src="images/logo.png" alt="Logo de Alura">
-        <h1>Challenge ONE Encriptador de Texto</h1>
+        <!-- <h1>Challenge ONE Encriptador de Texto</h1> -->
     </header>
-    
+
     <main>
         <section>
-            <textarea name="" id="" cols="30" rows="10">
-                placeholder="Ingrese el exto aqui"
-            </textarea>
-            <span>
-                Solo letras minúsculas y sin acento
-            </span>
-        </section>
-        
+            <textarea class="textoDeEntrada" cols="40" rows="9" placeholder="Ingrese el texto aqui"></textarea>
+            <br>
+            <div class = "dibujo">
+                <img src="images/Vector.svg">
+                <span class="textoInformativo">
+                    Solo letras minúsculas y sin acento
+                </span>
+            </div>
+            <div class="botones">
+                <button class="btn encriptar" onclick="botonEncriptar()">
+                    Encriptar!
+                </button>
+                <button class="btn desencriptar" onclick="botonDesencriptar()">
+                    Desencriptar!
+                </button>
+                <button class="btn copiar" onclick="copiar()" hidden>
+                    Copiar
+                </button>
+            </div>
+    </section>
+
         <section>
-            <img src="images/analyzer.png" alt="Dibujo de un analizador">
-            <textarea name="" id="" cols="30" rows="10">
-                placeholder="Ingrese el exto aqui"
-            </textarea>
-            <p>
-                Ningun mensaje fue encontrado
-            </p>
-            <p>
-                Ingrese el texto que desees encriptar o desencriptar
-            </p>
-            <button>
-                Copiar
-            </button>
-        </section>
-        
-        <section>
-            <button>
-                Encriptar
-            </button>
-            <button>
-                Desencriptar
-            </button>
+            <div class="contenedor">
+                <textarea class="mensaje" id="idTexto" cols="28" rows="8">
+                </textarea>
+                <div id="error">
+                    <p class="texto1">
+                        Ningun mensaje fue encontrado
+                    </p>
+                    <p class="texto2">
+                        Ingrese el texto que desees encriptar o desencriptar
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <footer>
-        <a href="https://github.com/josagugon"><img src="images/github.png" alt="GitHub de José Agustín González"></a>
-        <a href="https://www.linkedin.com/in/jose-agustin-gonzalez-86b555239/"><img src="images/linkedin.png"
-                alt="Linkedin de José Agustín González"></a>
-        <p class="copyright">&copy Copyright José Agustín González - septiembre - 2022</p>
-    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

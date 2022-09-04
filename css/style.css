@@ -31,7 +31,7 @@ main{
 .mensaje{
     margin-top: 0px;
     margin-left: 0px;
-    background-image: url("/images/dibujo.svg");
+    background-image: url("https://josagugon.github.io/Challenge-ONE-Encriptador-de-Texto/images/dibujo.svg");
     background-repeat: no-repeat;
     background-position: 28px;
     border-radius:20px;
